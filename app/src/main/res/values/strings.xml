@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Pumpkin</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="blogin">Login</string>
+    <string name="register_here">Register Here</string>
+
+    <string name="we_welcome_you">We welcome you :)</string>
+    <string name="age">Age</string>
+    <string name="user_area_username">Username</string>
+
+    <string name="reg_name">Name</string>
+    <string name="reg_age">Age</string>
+    <string name="reg_password">Password</string>
+    <string name="reg_button_register">Register</string>
+    <string name="reg_username">Username</string>
+
+
+
+    <string name="right_name">Alex</string>
+    <string name="rigth_password">1</string>
+
+
+
+
+</resources>
