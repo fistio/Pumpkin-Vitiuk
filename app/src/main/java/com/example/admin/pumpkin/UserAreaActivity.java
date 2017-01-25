@@ -16,7 +16,6 @@ public class UserAreaActivity extends AppCompatActivity {
         EditText etUsername = (EditText) findViewById(R.id.etUsername);
          EditText etAge = (EditText) findViewById(R.id.etAge);
 
-        // TextView welcomeMessage = (TextView) findViewById(R.id.tvWelcomeMsg);
 
         Intent intent = getIntent();
 
@@ -26,6 +25,7 @@ public class UserAreaActivity extends AppCompatActivity {
 
         etAge.setText(age);
         etUsername.setText(name);
+
 
 
 

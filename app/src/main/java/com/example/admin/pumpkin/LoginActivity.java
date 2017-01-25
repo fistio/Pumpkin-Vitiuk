@@ -11,6 +11,10 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private String TAG = "Жизненный цикл";
+    private TextView mInfoTextView;
+
+    ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,10 +34,6 @@ public class LoginActivity extends AppCompatActivity {
                 {
                  Toast.makeText(getBaseContext(), "Wrong password or username, try again", Toast.LENGTH_LONG).show();
                 }
-
-
-
-
             }
 
 
@@ -45,8 +45,38 @@ public class LoginActivity extends AppCompatActivity {
                 Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
                 LoginActivity.this.startActivity(registerIntent);
 
-
             }
         });
+
     }
+    protected void onStart() {
+        super.onStart();
+        Toast.makeText(getBaseContext(), "Turn id down", Toast.LENGTH_LONG).show();
+    }
+
+    protected void onRestart() {
+        super.onStart();
+        Toast.makeText(getBaseContext(), "Restart", Toast.LENGTH_LONG).show();
+    }
+    protected void onResume(){
+        super.onResume();
+        Toast.makeText(getBaseContext(), "Resume", Toast.LENGTH_LONG).show();
+    }
+
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(getBaseContext(), "Pause", Toast.LENGTH_LONG).show();
+    }
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(getBaseContext(), "Stop", Toast.LENGTH_LONG).show();
+    }
+
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(getBaseContext(), "Destroy!", Toast.LENGTH_LONG).show();
+    }
+
+
+
 }

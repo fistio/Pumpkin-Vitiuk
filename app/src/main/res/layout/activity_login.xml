@@ -50,4 +50,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
+    <Button
+        android:id="@+id/buttonTouchMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Touch Me!"
+        android:layout_below="@+id/tvRegisterHere"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
 </RelativeLayout>
