@@ -8,9 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
  public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
+
+
 
     EditText etAge;
     EditText etName;
@@ -28,6 +29,7 @@ import org.w3c.dom.Text;
           etUserName = (EditText) findViewById(R.id.etUsername);
           etPassword = (EditText) findViewById(R.id.etPassword);
 
+        setTitle("Register");
 
 
         button = (Button) findViewById(R.id.bRegister);
