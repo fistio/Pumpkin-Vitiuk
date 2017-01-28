@@ -70,4 +70,13 @@
         android:layout_marginTop="81dp"
         android:id="@+id/imageView"
         android:contentDescription="@android:string/cancel" />
+
+    <Button
+        android:text="@string/fragments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/bFragments"
+        android:background="@color/colorPrimary" />
 </RelativeLayout>

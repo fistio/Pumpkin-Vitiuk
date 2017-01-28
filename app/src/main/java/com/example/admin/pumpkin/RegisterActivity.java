@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
- public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
+public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
 
 
 
@@ -18,15 +18,15 @@ import android.widget.EditText;
     EditText etPassword;
     Button button;
 
-     @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-          etAge = (EditText) findViewById(R.id.etAge);
-          etName = (EditText) findViewById(R.id.etName);
-          etUserName = (EditText) findViewById(R.id.etUsername);
-          etPassword = (EditText) findViewById(R.id.etPassword);
+        etAge = (EditText) findViewById(R.id.etAge);
+        etName = (EditText) findViewById(R.id.etName);
+        etUserName = (EditText) findViewById(R.id.etUsername);
+        etPassword = (EditText) findViewById(R.id.etPassword);
 
         setTitle("Register");
 
