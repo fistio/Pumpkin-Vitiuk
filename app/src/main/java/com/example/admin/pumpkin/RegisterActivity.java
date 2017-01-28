@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 
  public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
@@ -19,7 +18,7 @@ import android.widget.TextView;
     EditText etPassword;
     Button button;
 
-    @Override
+     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
@@ -39,9 +38,9 @@ import android.widget.TextView;
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, UserAreaActivity.class);
-        intent.putExtra("age", etAge.getText().toString());
-        intent.putExtra("name", etName.getText().toString());
-        startActivity(intent);
+        Intent intent1 = new Intent(this, UserAreaActivity.class);
+        intent1.putExtra("age", etAge.getText().toString());
+        intent1.putExtra("name", etName.getText().toString());
+        startActivity(intent1);
     }
 }

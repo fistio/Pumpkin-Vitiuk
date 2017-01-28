@@ -28,9 +28,5 @@ public class UserAreaActivity extends AppCompatActivity {
         etAge.setText(age);
         etUsername.setText(name);
 
-
-
-        
-
     }
 }

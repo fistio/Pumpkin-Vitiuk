@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_user_area"
     android:layout_width="match_parent"
@@ -8,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.example.admin.pumpkin.UserAreaActivity">
 
     <TextView
@@ -57,4 +59,15 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         tools:ignore="LabelFor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pumpkin"
+        android:layout_below="@+id/etAge"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="81dp"
+        android:id="@+id/imageView"
+        android:contentDescription="@android:string/cancel" />
 </RelativeLayout>

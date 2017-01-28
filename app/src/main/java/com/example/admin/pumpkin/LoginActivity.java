@@ -9,7 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity{
+
 
 
     @Override
@@ -20,7 +21,8 @@ public class LoginActivity extends AppCompatActivity {
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         Button bLogin = (Button) findViewById(R.id.bLogin);
-        bLogin.setOnClickListener(new View.OnClickListener() {
+
+        bLogin.setOnClickListener(new View.OnClickListener()  {
 
             public void onClick(View view) {
                 if (etUsername.getText().toString().equals("Alex") && (etPassword.getText().toString().equals("12"))) {
@@ -31,7 +33,10 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
 
+
         });
+
+
 
         final TextView registerLink = (TextView) findViewById(R.id.tvRegisterHere);
         registerLink.setOnClickListener(new View.OnClickListener() {
@@ -43,8 +48,6 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         setTitle("Login");
-
-
     }
 
     protected void onStart() {
@@ -52,7 +55,8 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(getBaseContext(), "Login please", Toast.LENGTH_LONG).show();
     }
 
-    protected void onRestart() {
+
+  /*  protected void onRestart() {
         super.onStart();
         Toast.makeText(getBaseContext(), "", Toast.LENGTH_LONG).show();
     }
@@ -76,6 +80,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onDestroy();
         Toast.makeText(getBaseContext(), "", Toast.LENGTH_LONG).show();
     }
+    */
 
 
 }
