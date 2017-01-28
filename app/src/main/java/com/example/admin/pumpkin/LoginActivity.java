@@ -3,6 +3,7 @@ package com.example.admin.pumpkin;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,12 +26,24 @@ public class LoginActivity extends AppCompatActivity{
         bLogin.setOnClickListener(new View.OnClickListener()  {
 
             public void onClick(View view) {
+                if (TextUtils.isEmpty(etUsername.getText().toString())) {
+                    etUsername.setError("Enter User Name");
+                    etUsername.requestFocus();
+                    return;
+                }
+                if (TextUtils.isEmpty(etPassword.getText().toString())) {
+                    etPassword.setError("Enter Password");
+                    etPassword.requestFocus();
+                    return;
+                }
                 if (etUsername.getText().toString().equals("Alex") && (etPassword.getText().toString().equals("12"))) {
                     Intent intent = new Intent(LoginActivity.this, UserAreaActivity.class);
                     LoginActivity.this.startActivity(intent);
-                } else {
-                    Toast.makeText(getBaseContext(), "Wrong password or username, try again", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(), "Valid User", Toast.LENGTH_LONG).show();
+                }else {
+                    Toast.makeText(getApplicationContext(), "Wrong password or username, try again", Toast.LENGTH_LONG).show();
                 }
+
             }
 
 
