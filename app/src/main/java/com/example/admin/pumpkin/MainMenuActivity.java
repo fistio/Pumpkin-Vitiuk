@@ -16,7 +16,9 @@ public class MainMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
 
         initToolbar();
+        setTitle("Menu");
     }
+
 
     private void initToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
