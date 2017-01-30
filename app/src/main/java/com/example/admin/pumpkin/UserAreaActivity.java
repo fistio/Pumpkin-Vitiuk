@@ -32,14 +32,16 @@ public class UserAreaActivity extends AppCompatActivity {
         etAge.setText(age);
         etUsername.setText(name);
 
+
         final TextView registerLink = (TextView) findViewById(R.id.bFragments);
         registerLink.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent registerIntent = new Intent(UserAreaActivity.this, MainActivity.class);
+               Intent registerIntent = new Intent(UserAreaActivity.this, MainMenuActivity.class);
                 UserAreaActivity.this.startActivity(registerIntent);
 
             }
         });
+
 
 
     }

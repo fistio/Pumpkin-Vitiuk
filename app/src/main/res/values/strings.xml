@@ -27,6 +27,7 @@
     <string name="button">Button</string>
     <string name="fragments">Fragments</string>
     <string name="title_activity_basic">BasicActivity</string>
+    <string name="search_title">Search</string>
 
 
 </resources>
