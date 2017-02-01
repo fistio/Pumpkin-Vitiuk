@@ -21,7 +21,7 @@ import java.util.List;
 public class MainMenuActivity extends AppCompatActivity {
 
 
-    //private Toolbar toolbar;
+    private Toolbar toolbar;
     private RecyclerView recyclerView;
     private LinearLayoutManager verticalLinerLayoutManager;
     private LinearLayoutManager horizontalLinerLayoutManager;
@@ -42,8 +42,8 @@ public class MainMenuActivity extends AppCompatActivity {
         adapter = new RecyclerAdapter();
         recyclerView.setAdapter(adapter);
         adapter.addAll(ModelItem.getFakeItems());
-       // initToolbar();
-        //setTitle("Menu");
+      // initToolbar();
+        setTitle("Menu");
 
     }
 
@@ -105,9 +105,9 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
 
-   /* private void initToolbar() {
+    /*private void initToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(R.ww.app_name);
+        toolbar.setTitle(R.id.app_name);
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -118,5 +118,5 @@ public class MainMenuActivity extends AppCompatActivity {
         toolbar.inflateMenu(R.menu.menu);
 
     }
-    */
+*/
 }
