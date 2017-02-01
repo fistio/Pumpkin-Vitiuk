@@ -67,34 +67,5 @@ public class LoginActivity extends AppCompatActivity{
         super.onStart();
         Toast.makeText(getBaseContext(), "Login please", Toast.LENGTH_LONG).show();
     }
-
-
-  /*  protected void onRestart() {
-        super.onStart();
-        Toast.makeText(getBaseContext(), "", Toast.LENGTH_LONG).show();
-    }
-
-    protected void onResume() {
-        super.onResume();
-        Toast.makeText(getBaseContext(), "", Toast.LENGTH_LONG).show();
-    }
-
-    protected void onPause() {
-        super.onPause();
-        Toast.makeText(getBaseContext(), "", Toast.LENGTH_LONG).show();
-    }
-
-    protected void onStop() {
-        super.onStop();
-        Toast.makeText(getBaseContext(), "", Toast.LENGTH_LONG).show();
-    }
-
-    protected void onDestroy() {
-        super.onDestroy();
-        Toast.makeText(getBaseContext(), "", Toast.LENGTH_LONG).show();
-    }
-    */
-
-
 }
 

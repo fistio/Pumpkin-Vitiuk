@@ -4,14 +4,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class UserAreaActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+      protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_area);
 
@@ -19,8 +19,10 @@ public class UserAreaActivity extends AppCompatActivity {
 
 
 
+
+
         EditText etUsername = (EditText) findViewById(R.id.etUsername);
-         EditText etAge = (EditText) findViewById(R.id.etAge);
+        EditText etAge = (EditText) findViewById(R.id.etAge);
 
 
         Intent intent = getIntent();
@@ -38,6 +40,9 @@ public class UserAreaActivity extends AppCompatActivity {
             public void onClick(View v) {
                Intent registerIntent = new Intent(UserAreaActivity.this, MainMenuActivity.class);
                 UserAreaActivity.this.startActivity(registerIntent);
+
+
+
 
             }
         });
