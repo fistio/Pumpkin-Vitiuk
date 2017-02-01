@@ -19,12 +19,12 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/pumpkin2"
-            android:contentDescription="@string/app_name"
-            android:id="@+id/image" />
+            android:src="@drawable/pumpkin1"
+            android:contentDescription="@string/app_name" />
 
 
         <TextView

@@ -25,16 +25,16 @@ public class ModelItem {
 
     public static List<ModelItem> getFakeItems(){
         ArrayList<ModelItem> itemsList = new ArrayList<>();
-        itemsList.add(new ModelItem("Pumpkin1", R.drawable.pumpkin2));
-        itemsList.add(new ModelItem("Pumpkin2", R.drawable.pumpkin2));
-        itemsList.add(new ModelItem("Pumpkin3", R.drawable.pumpkin2));
-        itemsList.add(new ModelItem("Pumpkin4", R.drawable.pumpkin2));
-        itemsList.add(new ModelItem("Pumpkin5", R.drawable.pumpkin2));
-        itemsList.add(new ModelItem("Pumpkin6", R.drawable.pumpkin2));
-        itemsList.add(new ModelItem("Pumpkin7", R.drawable.pumpkin2));
-        itemsList.add(new ModelItem("Pumpkin8", R.drawable.pumpkin2));
-        itemsList.add(new ModelItem("Pumpkin9", R.drawable.pumpkin2));
-        itemsList.add(new ModelItem("Pumpkin10", R.drawable.pumpkin2));
+        itemsList.add(new ModelItem("Pumpkin1", R.drawable.pumpkin1));
+        itemsList.add(new ModelItem("Pumpkin2", R.drawable.pumpkin1));
+        itemsList.add(new ModelItem("Pumpkin3", R.drawable.pumpkin1));
+        itemsList.add(new ModelItem("Pumpkin4", R.drawable.pumpkin1));
+        itemsList.add(new ModelItem("Pumpkin5", R.drawable.pumpkin1));
+        itemsList.add(new ModelItem("Pumpkin6", R.drawable.pumpkin1));
+        itemsList.add(new ModelItem("Pumpkin7", R.drawable.pumpkin1));
+        itemsList.add(new ModelItem("Pumpkin8", R.drawable.pumpkin1));
+        itemsList.add(new ModelItem("Pumpkin9", R.drawable.pumpkin1));
+        itemsList.add(new ModelItem("Pumpkin10", R.drawable.pumpkin1));
         return  itemsList;
     }
 
