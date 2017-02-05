@@ -29,6 +29,7 @@
     <string name="fragments">Fragments</string>
     <string name="title_activity_basic">BasicActivity</string>
     <string name="search_title">Search</string>
+    <string name="confirm_password">Confirm Password</string>
 
 
 </resources>

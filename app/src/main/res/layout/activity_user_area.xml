@@ -30,25 +30,6 @@
         android:layout_alignParentStart="true"
         android:id="@+id/textView2" />
 
-    <TextView
-        android:text="@string/age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etUsername"
-        android:layout_alignParentStart="true"
-        android:id="@+id/textView3" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentStart="true"
-        android:id="@+id/etAge"
-        android:layout_alignParentEnd="true"
-        tools:ignore="LabelFor" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,17 +41,6 @@
         android:layout_alignParentEnd="true"
         tools:ignore="LabelFor" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/pumpkin"
-        android:layout_below="@+id/etAge"
-        android:layout_toEndOf="@+id/textView2"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="81dp"
-        android:id="@+id/imageView"
-        android:contentDescription="@android:string/cancel" />
-
     <Button
         android:text="@string/fragments"
         android:layout_width="wrap_content"
@@ -79,4 +49,14 @@
         android:layout_alignParentEnd="true"
         android:id="@+id/bFragments"
         android:background="@color/colorPrimary" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pumpkin"
+        android:id="@+id/imageView"
+        android:contentDescription="@android:string/cancel"
+        android:layout_above="@+id/bFragments"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp" />
 </RelativeLayout>
