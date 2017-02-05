@@ -30,6 +30,9 @@
     <string name="title_activity_basic">BasicActivity</string>
     <string name="search_title">Search</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="_8942">⋮</string>
 
 
 </resources>

@@ -35,10 +35,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
 
 
-
-
-
-
         button = (Button) findViewById(R.id.bRegister);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +55,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     return;
                 }
                 if (etPassword.getText().toString().equals(etConfirmPassword.getText().toString())) {
-                    Toast.makeText(getBaseContext(), "Successfull", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(), "Successful", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(RegisterActivity.this, UserAreaActivity.class);
                     RegisterActivity.this.startActivity(intent);
                 } else{
