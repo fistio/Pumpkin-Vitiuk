@@ -1,6 +1,7 @@
 package com.example.admin.pumpkin;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -63,6 +64,21 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     Toast.makeText(getBaseContext(), "Check your password", Toast.LENGTH_LONG).show();
 
                 }
+                /*
+                SharedPreferences preferences = getSharedPreferences("MYPREF", MODE_PRIVATE);
+                String newPassword = etPassword.getText().toString();
+                String newUserName = etUserName.getText().toString();
+                String newConfirmPassword = etConfirmPassword.getText().toString();
+
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("username", newUserName);
+                editor.putString("pass", newPassword);
+                editor.putString("conpass", newConfirmPassword);
+                editor.commit();
+
+                Intent loginScreen = new Intent(RegisterActivity.this, LoginActivity.class);
+                startActivity(loginScreen);
+                */
             }
         });
 
@@ -72,6 +88,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         Intent intent1 = new Intent(this, UserAreaActivity.class);
         intent1.putExtra("Username", etUserName.getText().toString());
         startActivity(intent1);
+
     }
 
     protected void onStart() {

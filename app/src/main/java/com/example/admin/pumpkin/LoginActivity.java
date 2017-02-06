@@ -1,6 +1,7 @@
 package com.example.admin.pumpkin;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -26,6 +27,24 @@ public class LoginActivity extends AppCompatActivity {
         bLogin.setOnClickListener(new View.OnClickListener()  {
 
             public void onClick(View view) {
+
+                /*
+                String user = etUsername.getText().toString();
+                String password = etPassword.getText().toString();
+
+                SharedPreferences preferences = getSharedPreferences("MYPREF", MODE_PRIVATE);
+
+                String userDetails = preferences.getString(user, "username");
+                String userDetails1 = preferences.getString(password, "password");
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("display", userDetails);
+                editor.putString("display", userDetails1);
+                editor.commit();
+                */
+
+
+
+
                 if (TextUtils.isEmpty(etUsername.getText().toString())) {
                     etUsername.setError("Enter User Name");
                     etUsername.requestFocus();
@@ -36,6 +55,9 @@ public class LoginActivity extends AppCompatActivity {
                     etPassword.requestFocus();
                     return;
                 }
+
+
+
                 if (etUsername.getText().toString().equals("Alex") && (etPassword.getText().toString().equals("12"))) {
                     Intent intent = new Intent(LoginActivity.this, UserAreaActivity.class);
                     LoginActivity.this.startActivity(intent);
@@ -43,6 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(getApplicationContext(), "Wrong password or username, try again", Toast.LENGTH_LONG).show();
                 }
+
 
             }
 
@@ -67,6 +90,5 @@ public class LoginActivity extends AppCompatActivity {
         super.onStart();
         Toast.makeText(getBaseContext(), "Login please", Toast.LENGTH_LONG).show();
     }
-
 }
 

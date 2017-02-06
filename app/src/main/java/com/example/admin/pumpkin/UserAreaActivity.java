@@ -1,6 +1,7 @@
 package com.example.admin.pumpkin;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,16 +15,19 @@ public class UserAreaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_area);
 
         setTitle("Welcome");
-
-
-        EditText etUsername = (EditText) findViewById(R.id.etUsername);
-
-
-        Intent intent = getIntent();
-
+           /*
+          EditText etUsername = (EditText) findViewById(R.id.etUsername);
+          Intent intent = getIntent();
           String name = intent.getStringExtra("Username");
-
           etUsername.setText(name);
+          */
+
+          SharedPreferences preferences = getSharedPreferences("MYPREF", MODE_PRIVATE);
+          String display = preferences.getString("display", "");
+
+          TextView displayInfo = (TextView) findViewById(R.id.etUsername);
+          displayInfo.setText(display);
+
 
 
         final TextView registerLink = (TextView) findViewById(R.id.bFragments);
